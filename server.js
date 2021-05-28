@@ -10,5 +10,8 @@ app.get('/date', (req, res) => {
   const date = new Date().toLocaleString('fr');
   res.send(date);
 });
+app.get('/ea', (req, res) => {
+  res.send('its in the game');
+});
 
 app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`));
